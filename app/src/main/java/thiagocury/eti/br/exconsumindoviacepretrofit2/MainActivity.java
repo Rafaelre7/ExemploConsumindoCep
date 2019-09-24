@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private EditText etCEP;
     private EditText etRua;
     private EditText etCidade;
+    private EditText edtRua;
+    private EditText edtBairro;
+    private EditText edtCidade;
+    private EditText edtUf;
     private Spinner spUFs;
     private Button btnBuscarPorCEP;
     private Button btnBuscarPorRuaCidadeEstado;
@@ -39,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Refs.
+        edtRua = findViewById(R.id.edtRua);
+        edtBairro = findViewById(R.id.edtBairro);
+        edtCidade = findViewById(R.id.edtCidade);
+        edtUf = findViewById(R.id.edtUf);
         etCEP = findViewById(R.id.et_cep);
         btnBuscarPorCEP = findViewById(R.id.btn_buscar_por_cep);
         progressBar = findViewById(R.id.progress_bar);
@@ -64,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onResponse(CEP response) {
                             CEP cep = response;
 
-                            Log.d("logadouro",cep.getLogradouro());
+//                            Log.d("logadouro",cep.getLogradouro());
 
                             //Retorno na Toast
                             Toast.makeText(
@@ -72,6 +80,17 @@ public class MainActivity extends AppCompatActivity {
                                     getResources().getString(R.string.toast_aviso_retorno)+cep.toString(),
                                     Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.INVISIBLE);
+
+                            edtRua.setVisibility(View.VISIBLE);
+                            edtBairro.setVisibility(View.VISIBLE);
+                            edtCidade.setVisibility(View.VISIBLE);
+                            edtUf.setVisibility(View.VISIBLE);
+
+                            edtRua.setText(cep.getLogradouro());
+                            edtBairro.setText(cep.getBairro());
+                            edtCidade.setText(cep.getLocalidade());
+                            edtUf.setText(cep.getUf());
+
                         }
 
                         @Override

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ExConsumindoViaCEPRetrofit2.iml" filepath="$PROJECT_DIR$/ExConsumindoViaCEPRetrofit2.iml" group="ExConsumindoViaCEPRetrofit2" />
-      <module fileurl="file://$PROJECT_DIR$/app/ExConsumindoViaCEPRetrofit2-app.iml" filepath="$PROJECT_DIR$/app/ExConsumindoViaCEPRetrofit2-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ExConsumindoViaCEPRetrofit2/app" />
-      <module fileurl="file://$PROJECT_DIR$/viacep-android-retrofit2-master-ExConsumindoViaCEPRetrofit2.iml" filepath="$PROJECT_DIR$/viacep-android-retrofit2-master-ExConsumindoViaCEPRetrofit2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExemploConsumindoCep.iml" filepath="$PROJECT_DIR$/ExemploConsumindoCep.iml" group="ExemploConsumindoCep" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ExemploConsumindoCep/app" />
     </modules>
   </component>
 </project>
