@@ -11,7 +11,7 @@ import java.lang.reflect.Type;
 import thiagocury.eti.br.exconsumindoviacepretrofit2.model.CEP;
 
 /**
- * Created by thiagocury on 21/11/17.
+ * Created Rafael Pimenta
  */
 
 public class CEPDeserializer implements JsonDeserializer {

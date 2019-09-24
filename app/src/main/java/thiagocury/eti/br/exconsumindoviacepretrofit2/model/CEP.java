@@ -1,7 +1,7 @@
 package thiagocury.eti.br.exconsumindoviacepretrofit2.model;
 
 /**
- * Created by thiagocury on 21/11/17.
+ * Created Rafael Pimenta
  */
 public class CEP {
 
